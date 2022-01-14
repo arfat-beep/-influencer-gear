@@ -11,6 +11,15 @@ a {
   text-decoration: none;
   color: black;
 }
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 1110px;
+  margin-top: 100px;
+}
 /* header start============================= */
 header {
   display: flex;
@@ -24,3 +33,46 @@ nav > ul li {
   list-style: none;
   margin-right: 34px;
 }
+/* hero start=========================== */
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero {
+  padding: 50px 120px;
+}
+.hero-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 30px;
+}
+.hero-details h1 {
+  font-size: 52px;
+}
+.hero-img img {
+  background-image: url(./../images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+}
+.hero-button {
+  padding: 10px 24px;
+  background: #e02c6d;
+  display: inline-block;
+  margin-top: 16px;
+  border-radius: 25px;
+  font-weight: bold;
+  color: #fff;
+}
+.hero-button .fas {
+  margin-left: 8px;
+}
+/* hero End=========================== */
+/* Brand start=========================== */
+.brands {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+/* Brand End=========================== */
