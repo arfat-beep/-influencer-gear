@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Basic style and utilities=========================================== */
+body {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* header start============================= */
+header {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+nav > ul {
+  display: flex;
+}
+nav > ul li {
+  list-style: none;
+  margin-right: 34px;
+}
