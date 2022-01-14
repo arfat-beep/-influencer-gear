@@ -11,6 +11,12 @@ a {
   text-decoration: none;
   color: black;
 }
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
 section {
   display: flex;
   justify-content: center;
@@ -76,3 +82,32 @@ nav > ul li {
   grid-template-columns: repeat(7, 1fr);
 }
 /* Brand End=========================== */
+/* Collection Start=========================== */
+.collections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 74px;
+}
+.collection {
+  border-radius: 5px;
+  padding: 17px 15px;
+  margin: 30px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+}
+.collection-img img {
+  width: 100%;
+}
+.collection-heading {
+  font-size: 28px;
+  font-weight: 500;
+}
+.collection-price {
+  font-size: 24px;
+}
+.ratings {
+  font-size: 14px;
+}
+.ratings .fas {
+  color: #fb8200;
+}
+/* Collection End=========================== */
