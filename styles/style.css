@@ -57,11 +57,15 @@ nav > ul li {
 .hero-details h1 {
   font-size: 52px;
 }
+.hero-button a:hover .hero-img > img {
+  width: 100% !important;
+}
 .hero-img img {
   background-image: url(./../images/Circle\ design.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 100%;
+  width: 80%;
+  transition: all 0.4s ease-in-out;
 }
 .hero-button {
   padding: 10px 24px;
@@ -71,15 +75,35 @@ nav > ul li {
   border-radius: 25px;
   font-weight: bold;
   color: #fff;
+  transition: all 0.3s ease-in-out;
 }
-.hero-button .fas {
-  margin-left: 8px;
+.hero-button:hover {
+  animation: animate 0.5s ease-in infinite;
+}
+@keyframes animate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.hero-button img {
+  width: 25px;
+  height: 25px;
+  padding-top: 10px;
 }
 /* hero End=========================== */
 /* Brand start=========================== */
 .brands {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  border-top: 1px solid rgba(0, 0, 0, 0.13);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+  padding: 20px 0;
 }
 /* Brand End=========================== */
 /* Collection Start=========================== */
@@ -182,13 +206,32 @@ footer {
     flex-direction: column-reverse;
     padding: 10px 30px;
   }
+  .hero-details {
+    text-align: center;
+  }
+  .hero-details h1 {
+    font-size: 28px;
+  }
+  .hero-details p {
+    font-size: 14px;
+  }
+  .hero-button {
+    font-size: 16px;
+  }
   .brands {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
   .brands .logo {
     display: flex;
+    width: 22%;
     justify-content: center;
     margin-top: 50px;
+  }
+  .brands .logo img {
+    width: 80%;
   }
   .photos,
   .collections {
@@ -211,8 +254,12 @@ footer {
     flex-direction: column-reverse;
     padding: 10px 30px;
   }
+  .hero-details {
+    text-align: center;
+  }
   .brands {
     grid-template-columns: repeat(3, 1fr);
+    border: none;
   }
   .brands .logo {
     display: flex;
