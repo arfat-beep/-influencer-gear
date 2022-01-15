@@ -110,4 +110,62 @@ nav > ul li {
 .ratings .fas {
   color: #fb8200;
 }
+.see-more a {
+  color: #e02c6d;
+  float: right;
+}
 /* Collection End=========================== */
+/* Popular Click Start========================= */
+.photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.photo-details {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+.photo-details .photo img {
+  width: 100%;
+}
+.photo-info {
+  position: absolute;
+  top: 100%;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #fff;
+  transition: all 0.6s ease-in-out;
+  padding: 30px;
+  padding-top: 100px;
+}
+.photo-details:hover .photo-info {
+  top: 0%;
+  left: -10px;
+}
+/* Popular Click End========================= */
+/* Footer Start========================= */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  margin-top: 50px;
+  background-color: rgb(23, 23, 88);
+  color: #fff;
+}
+.footer-icon {
+  display: flex;
+  justify-content: center;
+}
+.footer-icon .icon i {
+  border-radius: 50%;
+  padding: 10px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+/* Footer End========================= */
