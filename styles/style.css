@@ -169,3 +169,60 @@ footer {
   background-color: rgba(255, 255, 255, 0.1);
 }
 /* Footer End========================= */
+/* Mobile responsive website start ====================== */
+@media screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  nav {
+    display: none;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px 30px;
+  }
+  .brands {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .brands .logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .photos,
+  .collections {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .photos .photo-details {
+    height: 500px;
+  }
+  .photo-info {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* Mobile responsive website end ====================== */
+/* Tablate responsive website Start ====================== */
+@media (min-width: 689px) and (max-width: 991px) {
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px 30px;
+  }
+  .brands {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .brands .logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .photos,
+  .collections {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 74px;
+  }
+}
+/* Tablate responsive website End ====================== */
